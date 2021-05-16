@@ -53,4 +53,27 @@ namespace WindowShifter
             }
         }
     }
+
+    public class ScreenObject
+    {
+        string deviceName;
+        int xBound;
+        int yBound;
+        int xWorkingArea;
+        int yWorkingArea;
+        public ScreenObject(string name, int xB, int yB, int xWA, int yWA)
+        {
+            deviceName = name;
+            xBound = xB;
+            yBound = yB;
+            xWorkingArea = xWA;
+            yWorkingArea = yWA;
+        }
+
+        public void PrintData()
+        {
+            Console.WriteLine($"Device: {this.deviceName}. X Bounds: {xBound}. Y Bound: {yBound}. X Working Area: {xWorkingArea}. Y Working Area: {yWorkingArea}");
+        }
+    }
+
 }
