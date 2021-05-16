@@ -1,0 +1,7 @@
+.vs/
+App.config
+Properties/
+WindowShifter.csproj
+WindowShifter.sln
+bin/
+obj/
